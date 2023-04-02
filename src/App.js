@@ -22,7 +22,7 @@ function App() {
     return () => {
       clearInterval(intervalIdRef.current)
     }
-  }, [seconds])
+  }, [state, seconds])
 
   function handleTileClick(e) {
     e.target.style.backgroundColor = 'transparent';
